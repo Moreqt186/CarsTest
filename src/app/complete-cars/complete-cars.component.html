@@ -1,0 +1,13 @@
+<div class="m-2">
+  <h2>Выполненное ТО</h2>
+</div>
+<div class="card m-1" *ngFor="let item of allCompletedCars">
+  <div class="card-body">
+    <h5 class="card-title">
+      Наименование машины: {{item.carBrand}}
+    </h5>
+    <p class="card-text">
+      Год выпуска: {{item.carYear}}
+    </p>
+  </div>
+</div>

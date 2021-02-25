@@ -1,0 +1,20 @@
+<div class="d-flex justify-content-between m-2">
+  <h2>Очередь машин на ТО</h2>
+  <button type="button" class="btn btn-outline-success" (click)="open()">
+    Добавить машину в очередь
+  </button>
+</div>
+
+<div class="card m-1" *ngFor="let item of cars">
+  <div class="card-body">
+    <h5 class="card-title">
+      Наименование машины: {{item.carBrand}}
+    </h5>
+    <p class="card-text">
+      Год выпуска: {{item.carYear}}
+    </p>
+    <button class="btn btn-primary" (click)="completedCar(item)">
+      Пройти ТО
+    </button>
+  </div>
+</div>

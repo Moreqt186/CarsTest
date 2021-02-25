@@ -1,0 +1,31 @@
+<div class="modal-header">
+  <h4 class="modal-title">Добавление автомобиля</h4>
+  <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <form [formGroup]="form">
+    <div class="form-group">
+      <label for="brand">Модель</label>
+      <input formControlName="brand"
+        type="text"
+        class="form-control"
+        id="brand"
+        placeholder="Модель"
+      >
+    </div>
+    <div class="form-group">
+      <label for="year">Год выпуска</label>
+      <input formControlName="year"
+        type="text"
+        class="form-control"
+        id="year"
+        placeholder="Год выпуска"
+      >
+    </div>
+  </form>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-outline-dark" (click)="save()">Сохранить</button>
+</div>
