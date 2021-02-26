@@ -5,12 +5,11 @@ import {CarModel} from '../models/car.model';
   providedIn: 'root'
 })
 export class MaintenanceService {
-
   allCars: CarModel[] = [
-    {carBrand: 'Lada', carYear: '1993', completed: false, id: 1},
-    {carBrand: 'Lada', carYear: '1995', completed: false, id: 2},
-    {carBrand: 'dsfsd', carYear: '1994', completed: true, id: 3},
-    {carBrand: 'sdfsd', carYear: '1998', completed: false, id: 4}
+    {carBrand: 'Jeep', carYear: '1963', completed: false, id: 1},
+    {carBrand: 'Chevrolet', carYear: '1965', completed: false, id: 2},
+    {carBrand: 'Dodge', carYear: '1974', completed: true, id: 3},
+    {carBrand: 'Hummer', carYear: '1978', completed: false, id: 4}
   ];
   id: number = this.allCars.length + 1;
 
