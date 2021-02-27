@@ -1,7 +1,4 @@
-import { Component } from '@angular/core';
-import {ModalCarComponent} from './modal-car/modal-car.component';
-import {MaintenanceService} from './services/maintenance.service';
-import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -9,10 +6,6 @@ import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(private modalService: NgbModal) {
+  constructor() {
   }
-
-  // open() {
-  //   const modalRef = this.modalService.open(ModalCarComponent);
-  // }
 }
